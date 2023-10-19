@@ -17,10 +17,10 @@ public class Snack6 {
 
 
         int hours = seconds / 3600;
-        int minuts = (seconds % 3600) / 60;
-        int remaningSeconds = (seconds % 3600) % 60;
+        int minutes = (seconds % 3600) / 60;
+        int remainingSeconds = (seconds % 3600) % 60;
 
-        String time = String.format("%02d:%02d:%02d", hours, minuts, remaningSeconds);
+        String time = String.format("%02d:%02d:%02d", hours, minutes, remainingSeconds);
 
         // Stampa la stringa
         System.out.println("The time is: " + time);
