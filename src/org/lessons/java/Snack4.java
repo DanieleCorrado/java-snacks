@@ -26,5 +26,7 @@ public class Snack4 {
         } else {
             System.out.println("The word " + word + " is not a palindrome");
         }
+
+        scanner.close();
     }
 }
