@@ -20,10 +20,11 @@ public class Snack5 {
         String numberString = scanner.nextLine();
 
         int integer = 0;
+        char zero = '0';
         boolean isValid = true;
         for (int i = 0; i < numberString.length(); i++) {
             char c = numberString.charAt(i);
-            int digit = Character.getNumericValue(c);
+            int digit = c - zero;
 
             if (digit < 0 || digit > 9) {
                 isValid = false;
